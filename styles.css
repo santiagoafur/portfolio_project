@@ -9,11 +9,14 @@
 
 /* Desktop Header Styles */
 
+
 header {
     background-color: #271F30;
     overflow: hidden;
     width: 100%;
     height: 80px;
+    position: fixed;
+    z-index: 2;
 }
 
 .nav-container {
@@ -81,6 +84,37 @@ a .nav-num {
 
 .desktop-navbar .resume-link:active {
     background-color: #f95964;
+}
+
+
+/* Header Mobile Styles */
+
+@media only screen and (max-width: 500px) {
+    
+    header {
+        height: 140px;
+    }
+    
+    header .logo {
+        font-size: 3.25rem;
+    }
+
+    header .nav-container {
+        display: block;
+    }
+
+    header .desktop-navbar {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .desktop-navbar a {
+        font-size: 1.25rem;
+    }
+
+    .desktop-navbar .resume-link {
+        display: none;
+    }
 }
 
 /* Main Styles */
