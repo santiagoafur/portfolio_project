@@ -1,0 +1,89 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
+    box-sizing: border-box;
+}
+
+/* Desktop Header Styles */
+
+header {
+    background-color: #271F30;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #F5F7F3;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .desktop-navbar {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desktop-navbar a {
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+}
+
+.desktop-navbar a:hover {
+    background-color: #3e324d;
+    border-radius: 7px;
+}
+
+.desktop-navbar a:active {
+    background-color: #4b3c5c;
+    border-radius: 7px;
+}
+
+a .nav-link {
+    list-style: none;
+    color: #F5F7F3;
+}
+
+a .nav-num {
+    list-style: none;
+    color: #F03A47;
+}
+
+.desktop-navbar .resume-link {
+    background-color: #F03A47;
+    box-sizing: content-box;
+    width: 25%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.desktop-navbar .resume-link:hover {
+    background-color: #fd4753;
+    border-radius: 0;
+}
+
+.desktop-navbar .resume-link:active {
+    background-color: #f95964;
+}
+
+/* Main Styles */
+
+
+/* Footer Styles */
