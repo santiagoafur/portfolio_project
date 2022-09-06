@@ -264,10 +264,6 @@ main .photo-container {
         width: 95%;
     }
 
-    main .presentation {
-        height: 550px;
-    }
-
     .photo-container .photo {
         width: 95%;
         height: 40%;
@@ -279,4 +275,89 @@ main .photo-container {
     }
 }
 
+/* About Me Desktop and tablet Styles */
+
+main .about {
+    margin: 75px 0;
+}
+
+.hey h3 {
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    position: relative;
+}
+
+.hey h3:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #F03A47;
+}
+
+.about .space {
+    margin: 1.5rem 0;
+}
+
+.about .about-text {
+    width: 75%;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.about .skills-title {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about .skills-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box h4 {
+    margin-bottom: 0.75rem;
+}
+
+.box p {
+    margin-bottom: 1.2rem;
+}
+
+.box img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.skill {
+    display: flex;
+}
+
+@media only screen and (max-width: 820px) {
+    .about .about-text {
+        width: 90%;
+    }
+
+    .about .skills-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main .about {
+        margin: 20px 0;
+    }
+
+    .about .skills-container {
+        display: block;
+        text-align: center;   
+    }
+
+    .skill {
+        justify-content: center;
+    }
+}
 /* Footer Styles */
