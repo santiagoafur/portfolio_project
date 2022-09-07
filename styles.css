@@ -584,3 +584,7 @@ footer {
         width: 90%;
     }
 }
+
+.photo-container .photo:hover {
+    cursor: pointer;
+}

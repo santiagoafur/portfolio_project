@@ -14,6 +14,9 @@
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./resources/images/favicon/favicon.png">
+
+    <!-- js -->
+    <script type="text/javascript" src="./script.js"></script>
 </head>
 
 <body>
@@ -52,14 +55,14 @@
     <main>
         <!-- presentation -->
         <section class="presentation extension">
-            <div class="saying-hi">
+            <div class="saying-hi" id="left-cont">
                 <div class="hi-content">
                     <h1>Hi, I'm Santiago Afur</h1>
                     <h3>Software Engineering student and Full-stack developer (in progress).<span>&#160;</span></h3>
                 </div>
             </div>
-            <div class="photo-container">
-                <div class="photo"></div>
+            <div class="photo-container" id="right-cont">
+                <div class="photo" id="photo-obj"></div>
             </div>
             <div class="mobilee-container">
                 <div class="mobile-photo"></div>
@@ -167,7 +170,8 @@
             <div class="get-in-touch">
                 <h1>Get in Touch</h1>
                 <p>
-                    If you are looking for a motivated, responsible and creative Full-stack Engineer, please dont hesitate to contact me.
+                    Have an idea or a project you would like to work on?
+                    I would love to hear about it :)
                 </p>
             </div>
             <a href="mailto:afur.santiago29@gmail.com" class="mail-contact">E-Mail Contact</a>
@@ -178,6 +182,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function changeColor() {
+    leftCont = document.getElementById('left-cont');
+    rightCont = document.getElementById('right-cont');
+
+    leftStyle = window.getComputedStyle(leftCont, '').getPropertyValue('background-color');
+    rightStyle = window.getComputedStyle(rightCont, '').getPropertyValue('background-color');
+
+    if(rightStyle === 'rgb(240, 58, 71)') {
+        leftCont.style.backgroundColor = '#F03A47';
+        rightCont.style.backgroundColor = '#EBEBEB';
+    }
+    if(rightStyle !== 'rgb(240, 58, 71)') {
+        leftCont.style.backgroundColor = '#EBEBEB';
+        rightCont.style.backgroundColor = '#F03A47';
+    }
+}
+
+objetive = document.getElementById('photo-obj');
+objetive.addEventListener("click", changeColor);
+    </script>
 </body>
 
 </html>
